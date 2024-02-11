@@ -1,6 +1,8 @@
 //Variables
 const productGrid = document.querySelector(".product__gri");
 const productContent = document.querySelector(".carrito__product");
+const carritoProductos = document.querySelector(".carrito__productos");
+const iconCarrito = document.querySelector(".carrito__list svg");
 const carritoCont = document.querySelector(".carrito");
 const vacio = document.querySelector(".empty");
 const totalPrecio = document.getElementById("numTotal");
@@ -15,6 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem("hamburguesas")) || [];
 
   crearAgregarHTML();
+});
+iconCarrito.addEventListener("click", () => {
+  carritoProductos.classList.toggle("car_view");
 });
 
 //Funciones

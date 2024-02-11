@@ -81,16 +81,19 @@ li {
   position: absolute;
   right: 0;
   width: 22rem;
-  height: 24rem;
   padding: 0.8rem 1.5rem;
   background-color: white;
   display: none;
   border-radius: 0.5rem;
 }
 
-.carrito__list:hover .carrito__productos {
+.car_view {
   display: block;
 }
+
+/* .carrito__list:hover .carrito__productos {
+  display: block;
+} */
 
 .carrito__productos {
   overflow-y: scroll;
@@ -264,7 +267,7 @@ footer {
 
 .empty {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1.2rem 0;
   font-size: 1.2rem;
   color: #424242;
 }
